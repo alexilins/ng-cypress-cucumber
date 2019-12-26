@@ -1,0 +1,9 @@
+{
+  "fixturesFolder": "./lms-e2e/fixtures",
+  "integrationFolder": "./lms-e2e/integrations",
+  "pluginsFile": false,
+  "supportFile": "./lms-e2e/support/index.js",
+  "screenshotsFolder": "dist/cypress/screenshots",
+  "videosFolder": "dist/cypress/videos",
+  "testFiles": ["**/*.spec.js"]
+}

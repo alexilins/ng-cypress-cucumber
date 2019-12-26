@@ -1,0 +1,26 @@
+npm install cypress --save-dev
+
+add lms-e2e/
+add lms-e2e/cypress.json
+
+
+add fixtures/ + user.json
+
+
+add integrations/ + app.spec.js
+
+add plugins/ + index.js
+
+
+
+add line
+    "cypress": "./node_modules/cypress/bin/cypress run --config-file lms-e2e/cypress.json"
+to scripts in package.json
+
+
+
+// etc
+
+
+
+// TODO: add "screenshotsFolder" and "videosFolder" to cypress.json
