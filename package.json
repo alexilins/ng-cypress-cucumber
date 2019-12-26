@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "cypress": "./node_modules/cypress/bin/cypress run --config-file lms-e2e/cypress.json",
+    "cypress": "./node_modules/cypress/bin/cypress run",
     "ci:dev": "./node_modules/start-server-and-test/src/bin/start.js 'npm run start' 4200 'npm run cypress'"
   },
   "private": true,
@@ -35,6 +35,7 @@
     "@types/node": "~8.9.4",
     "codelyzer": "^5.0.0",
     "cypress": "^3.8.1",
+    "cypress-cucumber-preprocessor": "^1.19.0",
     "jasmine-core": "~3.4.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~4.1.0",
@@ -47,5 +48,8 @@
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
     "typescript": "~3.5.3"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
   }
 }

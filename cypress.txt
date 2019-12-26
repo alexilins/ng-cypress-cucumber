@@ -1,32 +1,14 @@
 npm install cypress --save-dev
+npm install --save-dev start-server-and-test
+npm install cypress-cucumber-preprocessor --save-dev
 
-add lms-e2e/
-add lms-e2e/cypress.json
+./node_modules/cypress/bin/cypress open
 
+modify package.json (scripts + last section)
 
-add fixtures/ + user.json
+replace files in cypress/
+replace content in cypress.json
 
-
-add integrations/ + app.spec.js
-
-add plugins/ + index.js
-
-
-
-add line
-    "cypress": "./node_modules/cypress/bin/cypress run --config-file lms-e2e/cypress.json"
-to scripts in package.json
-
-
-
-// etc
-
-
+"cypress": "./node_modules/cypress/bin/cypress run --config-file lms-e2e/cypress.json"
 
 // TODO: add "screenshotsFolder" and "videosFolder" to cypress.json
-
-
-
-PHASE 2
-
-npm install --save-dev start-server-and-test
