@@ -1,4 +1,5 @@
 {
+  "baseUrl": "http://localhost:4200/",
   "fixturesFolder": "./lms-e2e/fixtures",
   "integrationFolder": "./lms-e2e/integrations",
   "pluginsFile": false,

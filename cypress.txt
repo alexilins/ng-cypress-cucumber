@@ -24,3 +24,9 @@ to scripts in package.json
 
 
 // TODO: add "screenshotsFolder" and "videosFolder" to cypress.json
+
+
+
+PHASE 2
+
+npm install --save-dev start-server-and-test

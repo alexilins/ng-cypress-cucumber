@@ -8,7 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "cypress": "./node_modules/cypress/bin/cypress run --config-file lms-e2e/cypress.json"
+    "cypress": "./node_modules/cypress/bin/cypress run --config-file lms-e2e/cypress.json",
+    "ci:dev": "./node_modules/start-server-and-test/src/bin/start.js 'npm run start' 4200 'npm run cypress'"
   },
   "private": true,
   "dependencies": {
@@ -42,6 +43,7 @@
     "karma-jasmine": "~2.0.1",
     "karma-jasmine-html-reporter": "^1.4.0",
     "protractor": "~5.4.0",
+    "start-server-and-test": "^1.10.6",
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
     "typescript": "~3.5.3"
